@@ -1,46 +1,71 @@
-# Getting Started with Create React App
+# React Resume Class
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents/Branch Directory
+1. Resume JSON Fetch, App Context
+2. Main Header/Image, About Me
+3. Experience, Education, Leadership and Service
+4. Skills & Achievements
+5. Portfolio
+6. Nav, Footer, Contact Section
+7. Index.html, Favicon
 
-## Available Scripts
+## Resume JSON Fetch, App Context
+- `git checkout fetch-context-branch`
 
-In the project directory, you can run:
+### Steps
+1. Checkout Branch
+2. Add resume file to `public/media/documents/`
+3. Review `public/data/resume.json` file and fill in personal information including resume.pdf file name
+4. Start up project
 
-### `npm start`
+## Main Header/Image, About Me
+- `git checkout main-about-branch`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Steps
+1. Checkout Branch
+2. Add personal image to `public/media/about/`
+3. Review `public/data/resume.json` file and fill in personal information including about me image name
+4. Start up project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Experience, Education, Leadership and Service
+- `git checkout experience-education-leadership-branch`
 
-### `npm test`
+### Steps
+1. Checkout Branch
+2. Add experience/education/leadership images to `public/media/experience/`
+3. Review `public/data/resume.json` file and fill in personal information including company image names
+3. Start up project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Skills & Achievements
+- `git checkout skills-achievements-branch`
 
-### `npm run build`
+### Steps
+1. Checkout Branch
+2. Review `public/data/resume.json` file and fill in personal information including skills list and achievements
+3. Start up project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Portfolio
+- `git checkout portfolio-branch`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Steps
+1. Checkout Branch
+2. Add experience/education/leadership images to `public/media/portfolio/`
+3. Review `public/data/resume.json` file and fill in personal information including portfolio projects and image names
+4. Start up project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Nav, Footer, Contact Section
+- `git checkout nav-footer-contact-branch`
 
-### `npm run eject`
+### Steps
+1. Checkout Branch
+2. Review `public/data/resume.json` file and fill in personal information including contact info
+3. Start up project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Index.html, Favicon
+- `git checkout index-favicon-branch`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Steps
+1. Checkout Branch
+2. Change `meta` tag in `public/index.html` to description
+3. Go to [https://favicon.io/](https://favicon.io/) to create favicon and add to `public` folder
+4. Start up project
