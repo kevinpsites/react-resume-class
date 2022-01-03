@@ -1,0 +1,109 @@
+{
+  "contact": {
+    "phone": "+1 234-567-8901",
+    "email": "me@me.com",
+    "social": [
+      {
+        "type": "Linkedin",
+        "url": "https://linkedin.com/in/my-name"
+      }
+    ]
+  },
+  "personal": {
+    "name": "John Doe",
+    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt nibh tortor, a consectetur felis efficitur vitae. Aenean ullamcorper metus ut odio pharetra interdum. In euismod quam sit amet tellus.",
+    "resume": "Resume.pdf",
+    "title": "My Title 1 | Second Title",
+    "adjectives": [
+      {
+        "adjective": "Adjective",
+        "link": "linkTo"
+      }
+    ],
+    "aboutMeImage": "about_me.png"
+  },
+  "education": [
+    {
+      "organization": {
+        "name": "My First Education",
+        "image": "education_logo.png",
+        "website": "https://google.com"
+      },
+      "location": "Provo, UT",
+      "date": {
+        "start": "Jan 2021",
+        "end": "Jan 2022"
+      },
+      "title": "Bachelors Degree of Writing False Things",
+      "bullets": ["3.75 GPA", "Member of the Professional Fake Text Club"]
+    }
+  ],
+  "experience": [
+    {
+      "organization": {
+        "name": "My First Experience",
+        "image": "experience_logo.png",
+        "website": "https://google.com"
+      },
+      "location": "Washington, DC",
+      "date": {
+        "start": "Jan 2022",
+        "end": "Present"
+      },
+      "title": "Manager at Making Stuff Up",
+      "bullets": [
+        "Wrote Multiple False Bullet Points",
+        "Quantified at least 100x Things"
+      ]
+    }
+  ],
+  "leadershipService": [
+    {
+      "organization": {
+        "name": "My First Leadership",
+        "image": "leadership_logo.png",
+        "website": "https://google.com"
+      },
+      "location": "Dallas, TX",
+      "date": {
+        "start": "Jul 2021",
+        "end": "Sep 2021"
+      },
+      "title": "Team Lead - Intern",
+      "bullets": [
+        "Wrote Multiple False Bullet Points",
+        "Quantified at least 100x Things"
+      ]
+    }
+  ],
+  "achievements": [
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "Cras tincidunt nibh tortor, a consectetur felis efficitur vitae.",
+    "Aenean ullamcorper metus ut odio pharetra interdum. In euismod quam sit amet tellus."
+  ],
+  "skills": [
+    {
+      "skill": "Writing",
+      "rating": 10
+    },
+    {
+      "skill": "Design",
+      "rating": 5
+    },
+    {
+      "skill": "Texting",
+      "rating": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "My First Project",
+      "projectRole": "Main Writer",
+      "url": "https://google.com",
+      "skills": ["Writing", "Design", "Microsoft", "Googling"],
+      "app": "portfolio.png",
+      "pictures": ["portfolio_1", "portfolio_2", "portfolio_3"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt nibh tortor, a consectetur felis efficitur vitae."
+    }
+  ]
+}
