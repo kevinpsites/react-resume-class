@@ -7,7 +7,14 @@ export interface MainAppContext {
 
 export const AppContext = createContext<MainAppContext>({
   resume: {
-    personal: { name: "", about: "", resume: "", title: "", aboutMeImage: "" },
+    personal: {
+      name: "",
+      about: "",
+      resume: "",
+      title: "",
+      aboutMeImage: "",
+      adjectives: [],
+    },
   },
 });
 export const useAppContext = () => useContext(AppContext);

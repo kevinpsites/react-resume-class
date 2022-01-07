@@ -8,4 +8,10 @@ export interface PersonalSectionObject {
   resume: string;
   title: string;
   aboutMeImage: string;
+  adjectives: PersonalAdjectives[];
+}
+
+export interface PersonalAdjectives {
+  adjective: string;
+  link: string;
 }
