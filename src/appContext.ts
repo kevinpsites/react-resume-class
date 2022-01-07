@@ -18,6 +18,7 @@ export const AppContext = createContext<MainAppContext>({
     education: [],
     experience: [],
     leadershipService: [],
+    achievements: [],
   },
 });
 export const useAppContext = () => useContext(AppContext);

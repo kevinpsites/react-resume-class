@@ -3,6 +3,7 @@ import "./App.css";
 import { AppContext } from "./appContext";
 import LoadingScreen from "./components/basicComponents/loadingScreen";
 import AboutSection from "./components/sectionComponents/aboutSection";
+import AchievementSection from "./components/sectionComponents/achievementSection";
 import ExperienceSection from "./components/sectionComponents/experience/experienceSection";
 import { useRetrieveResume } from "./hooks/useRetrieveResume";
 
@@ -28,6 +29,8 @@ const App = () => {
               {resume.leadershipService.length > 0 && (
                 <ExperienceSection title="leadership & Service" />
               )}
+
+              {resume.achievements.length > 0 && <AchievementSection />}
             </>
           )}
         </main>

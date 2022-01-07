@@ -192,6 +192,16 @@ img {
   font-size: var(--h4);
 }
 
+.achievement-section-container {
+  max-width: var(--max-page-width);
+  margin: 0px auto;
+}
+
+.achievement-section-container ul {
+  margin-left: 24px;
+  font-size: var(--h4);
+}
+
 @media screen and (min-width: 750px) {
   :root {
     --type-scale: 1.1;

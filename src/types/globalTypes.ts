@@ -3,6 +3,7 @@ export interface ResumeObject {
   education: ExperienceObject[];
   experience: ExperienceObject[];
   leadershipService: ExperienceObject[];
+  achievements: string[];
 }
 
 export type sectionKeys = "education" | "experience" | "leadership & Service";
