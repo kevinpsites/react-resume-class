@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 import { AppContext } from "./appContext";
-import LoadingScreen from "./basicComponents/loadingScreen";
+import LoadingScreen from "./components/basicComponents/loadingScreen";
+import AboutSection from "./components/sectionComponents/aboutSection";
 import { useRetrieveResume } from "./hooks/useRetrieveResume";
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
       <AppContext.Provider value={{ resume }}>
         <main>
           {error && error}
-          {resume && "Resume Loaded"}
+          {resume && <AboutSection />}
         </main>
       </AppContext.Provider>
     </LoadingScreen>
