@@ -5,6 +5,8 @@
     sans-serif;
 
   --primary-font-black: #545454;
+  --primary-color: #175997;
+  --primary-white: white;
 
   --base-size: 1em;
   --type-scale: 1;
@@ -108,7 +110,7 @@ main {
   justify-content: center;
 
   background-color: #333333c0;
-  color: white;
+  color: var(--primary-white);
 }
 
 img {
@@ -139,7 +141,7 @@ img {
 }
 
 .experience-section-container {
-  padding: 4px;
+  padding: 4px 8px;
   max-width: var(--max-page-width);
   margin: 0px auto;
 }
@@ -186,6 +188,7 @@ img {
 .experience-section ul {
   grid-area: bullets;
   margin-left: 20px;
+  font-size: var(--h4);
 }
 
 @media screen and (min-width: 750px) {
@@ -215,6 +218,10 @@ img {
   .about-section-container section:first-child p {
     margin-top: 16px;
     padding: 4px 0px;
+  }
+
+  .experience-section-container h1 {
+    padding: 0px 16px;
   }
 
   .experience-section {
