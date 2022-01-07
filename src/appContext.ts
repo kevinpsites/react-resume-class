@@ -15,6 +15,9 @@ export const AppContext = createContext<MainAppContext>({
       aboutMeImage: "",
       adjectives: [],
     },
+    education: [],
+    experience: [],
+    leadershipService: [],
   },
 });
 export const useAppContext = () => useContext(AppContext);
