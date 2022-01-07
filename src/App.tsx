@@ -5,6 +5,7 @@ import LoadingScreen from "./components/basicComponents/loadingScreen";
 import AboutSection from "./components/sectionComponents/aboutSection";
 import AchievementSection from "./components/sectionComponents/achievementSection";
 import ExperienceSection from "./components/sectionComponents/experience/experienceSection";
+import SkillsSection from "./components/sectionComponents/skills/skillsSection";
 import { useRetrieveResume } from "./hooks/useRetrieveResume";
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
               )}
 
               {resume.achievements.length > 0 && <AchievementSection />}
+              {resume.skills.length > 0 && <SkillsSection />}
             </>
           )}
         </main>
