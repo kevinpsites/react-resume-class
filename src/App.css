@@ -200,6 +200,11 @@ img {
   padding: 16px;
 }
 
+.achievement-section-container h1,
+.skills-section-container h1 {
+  padding: 12px 0px;
+}
+
 .achievement-section-container ul {
   margin-left: 24px;
   font-size: var(--h4);
