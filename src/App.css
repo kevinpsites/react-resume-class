@@ -193,7 +193,7 @@ img {
 .achievement-section-container {
   max-width: var(--max-page-width);
   margin: 0px auto;
-  padding: 16px 8px;
+  padding: 16px;
 }
 
 .achievement-section-container ul {
