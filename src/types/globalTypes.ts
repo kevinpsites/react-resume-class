@@ -5,6 +5,7 @@ export interface ResumeObject {
   leadershipService: ExperienceObject[];
   achievements: string[];
   skills: SkillObject[];
+  portfolio: PortfolioObject[];
 }
 
 export type sectionKeys = "education" | "experience" | "leadership & Service";
@@ -45,4 +46,14 @@ export interface ExperienceDateObject {
 export interface SkillObject {
   skill: string;
   rating: 10;
+}
+
+export interface PortfolioObject {
+  name: string;
+  projectRole: string;
+  url: string;
+  skills: string[];
+  app: string;
+  pictures: string[];
+  description: string;
 }

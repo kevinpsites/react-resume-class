@@ -20,6 +20,7 @@ export const AppContext = createContext<MainAppContext>({
     leadershipService: [],
     achievements: [],
     skills: [],
+    portfolio: [],
   },
 });
 export const useAppContext = () => useContext(AppContext);

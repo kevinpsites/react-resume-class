@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-import appSettings from "../../../appSettings.json";
 import { useAppContext } from "../../../appContext";
 import { sectionKeys } from "../../../types/globalTypes";
 import { capitalizeLetter } from "../../../utils/commonFunctions";
