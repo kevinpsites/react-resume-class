@@ -65,6 +65,7 @@ h4 {
   font-weight: normal;
 }
 
+.h5,
 h5 {
   font-size: var(--h5);
   font-weight: normal;
@@ -193,6 +194,7 @@ img {
   font-size: var(--h4);
 }
 
+.portfolio-section-container,
 .skills-section-container,
 .achievement-section-container {
   max-width: var(--max-page-width);
@@ -200,6 +202,7 @@ img {
   padding: 16px;
 }
 
+.portfolio-section-container h1,
 .achievement-section-container h1,
 .skills-section-container h1 {
   padding: 12px 0px;
@@ -234,6 +237,44 @@ img {
   padding: 4px 8px;
   border: 1px solid var(--primary-white);
   border-radius: 50px;
+}
+
+.portfolio-section-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(20px, auto);
+  grid-gap: 0.5rem;
+}
+
+.portfolio-section {
+  margin: 8px 0px;
+
+  display: grid;
+  grid-template-columns: 8px 1fr 8px;
+  grid-template-rows: 1fr 24px 36px;
+  border: 1px solid;
+  border-radius: 16px;
+}
+
+.portfolio-section .header-img {
+  grid-column: 1/4;
+  grid-row: 1/4;
+
+  width: 100%;
+  border-radius: 16px;
+}
+
+.portfolio-section .h5 {
+  grid-column: 2/3;
+  grid-row: 3;
+
+  padding: 8px 0px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  display: inline-block;
 }
 
 @media screen and (min-width: 750px) {
@@ -316,10 +357,22 @@ img {
   .skills-section-container ul {
     justify-content: flex-start;
   }
+
+  .portfolio-section-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .portfolio-section {
+    margin: 8px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   :root {
     --type-scale: 1.2;
+  }
+
+  .portfolio-section-list {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
