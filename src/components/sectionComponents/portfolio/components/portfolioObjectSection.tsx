@@ -2,16 +2,14 @@ import appSettings from "../../../../appSettings.json";
 import { PortfolioObject } from "../../../../types/globalTypes";
 
 const PortfolioObjectSection = ({
-  name,
-  projectRole,
-  url,
-  skills,
-  app,
-  pictures,
-  description,
-}: PortfolioObject) => {
+  entry: { name, app, pictures },
+  onClick,
+}: {
+  entry: PortfolioObject;
+  onClick: () => void;
+}) => {
   return (
-    <section className={`portfolio-section`}>
+    <section className={`portfolio-section`} onClick={onClick}>
       {app || pictures.length > 0 ? (
         <img
           src={`${appSettings.publicFilePaths.image}/${
