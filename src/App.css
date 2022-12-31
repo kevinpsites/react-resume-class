@@ -239,6 +239,10 @@ img {
   color: var(--primary-white);
 }
 
+.skills-section-container ul li:first-child {
+  margin-left: 0px;
+}
+
 .skill-bullet span:first-child {
   padding: 4px 8px;
   border: 1px solid var(--primary-white);
