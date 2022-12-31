@@ -60,6 +60,7 @@ h2 {
   font-weight: normal;
 }
 
+.h3,
 h3 {
   font-size: var(--h3);
   font-weight: normal;
@@ -442,6 +443,66 @@ img {
   margin: 0px 4px;
 }
 
+.footer-section-container {
+  color: white;
+  background-color: #545454;
+  padding: 16px;
+}
+
+.footer-section {
+  max-width: var(--max-page-width);
+
+  display: grid;
+  grid-gap: 8px;
+  grid-template-areas:
+    "title"
+    "space"
+    "social";
+
+  margin: 0px auto;
+  padding: 4px;
+}
+
+.footer-section-container li {
+  list-style: none;
+  max-width: 50px;
+  margin: 0px 4px;
+}
+
+.footer-title-container {
+  grid-area: title;
+}
+
+.footer-title-container .footer-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.footer-title-container .footer-phone {
+  margin: 8px 0px;
+}
+
+.footer-email span,
+.footer-phone span {
+  margin-right: 4px;
+}
+
+.footer-email a,
+.footer-phone a {
+  text-decoration: underline;
+}
+
+.footer-social-container {
+  grid-area: social;
+}
+
+.footer-social-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 @media screen and (min-width: 750px) {
   :root {
     --type-scale: 1.1;
@@ -527,8 +588,24 @@ img {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .portfolio-section {
-    margin: 8px;
+  .footer-section-container {
+    padding: 8px;
+  }
+
+  .footer-section {
+    grid-template-areas:
+      "title space extraspace"
+      "title space social";
+
+    padding: 12px;
+  }
+
+  .footer-title-container .footer-title {
+    text-align: left;
+  }
+
+  .footer-social-container ul {
+    justify-content: flex-end;
   }
 }
 
@@ -538,6 +615,10 @@ img {
   }
 
   .portfolio-section-list {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .footer-section {
+    padding: 16px;
   }
 }

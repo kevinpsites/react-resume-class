@@ -6,6 +6,7 @@ export interface ResumeObject {
   achievements: string[];
   skills: SkillObject[];
   portfolio: PortfolioObject[];
+  contact: ContactObject;
 }
 
 export type sectionKeys = "education" | "experience" | "leadership & Service";
@@ -57,3 +58,21 @@ export interface PortfolioObject {
   pictures: string[];
   description: string;
 }
+
+export interface ContactObject {
+  phone: string;
+  email: string;
+  social: ContactSocialObject[];
+}
+
+export interface ContactSocialObject {
+  type: SocialMediaList;
+  url: string;
+}
+
+export type SocialMediaList =
+  | "Linkedin"
+  | "Github"
+  | "Youtube"
+  | "Vimeo"
+  | "Twitter";

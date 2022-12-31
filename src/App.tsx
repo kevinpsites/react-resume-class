@@ -5,6 +5,7 @@ import LoadingScreen from "./components/basicComponents/loadingScreen";
 import AboutSection from "./components/sectionComponents/aboutSection";
 import AchievementSection from "./components/sectionComponents/achievementSection";
 import ExperienceSection from "./components/sectionComponents/experience/experienceSection";
+import FooterSection from "./components/sectionComponents/footerSection";
 import PortfolioSection from "./components/sectionComponents/portfolio/portfolioSection";
 import SkillsSection from "./components/sectionComponents/skills/skillsSection";
 import { useRetrieveResume } from "./hooks/useRetrieveResume";
@@ -36,6 +37,8 @@ const App = () => {
               {resume.skills.length > 0 && <SkillsSection />}
 
               {resume.portfolio.length > 0 && <PortfolioSection />}
+
+              {resume.contact && <FooterSection />}
             </>
           )}
         </main>

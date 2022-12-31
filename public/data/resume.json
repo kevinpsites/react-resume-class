@@ -6,6 +6,10 @@
       {
         "type": "Linkedin",
         "url": "https://linkedin.com/in/my-name"
+      },
+      {
+        "type": "Github",
+        "url": "https://github.com/my-name"
       }
     ]
   },
